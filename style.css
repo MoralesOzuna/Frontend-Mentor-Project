@@ -1,0 +1,131 @@
+:root {
+    /* colors */
+    --primary-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    --background-blue:hsl(217, 54%, 11%);
+    --card-blue: hsl(216, 50%, 16%);
+    --line-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --font: 'outfit';
+}
+
+ 
+/* Resetear el navegador para que 1rem = 10px */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: var(--font);
+    background-color: var(--background-blue);
+ 
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    border-radius: 1rem;
+    background-color: var(--card-blue);
+    width: 35rem;
+}
+.card-photo{
+    background-image: url(../images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 2.5rem;
+    height: 30rem;
+    border-radius: 1rem;  
+}
+.card-photo-active{
+    margin: 2.5rem;
+    height: 30rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin: auto;
+}  
+.card-photo-active:hover{
+    cursor: pointer;
+    background-color: rgba(0, 255, 247, .55);
+    background-image: url(../images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card h1{
+    color: var(--white);
+    font-weight: 600;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+}
+.card h1:hover {
+    color: var(--primary-cyan);
+    cursor: pointer;
+}
+.card>p{
+    color: var(--primary-blue);
+    font-weight: 300;
+    margin-left: 2rem;
+    font-size: 1.8rem;
+}
+.subtitle-information{
+    color: var(--primary-cyan);
+    font-weight: 600;
+}
+.subtitle-icon{
+    margin-right: 0.5rem;
+}
+.secondary-information{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.05rem solid var(--line-blue);
+    width: 85%;
+    margin: 0 auto;
+}
+.time-information{
+    color: var(--primary-blue);
+    font-weight: 300;
+}
+.time-icon{
+    margin-right: 0.5rem;
+}
+.top-margin{
+    margin-top: 0.1rem;
+}
+.card-footer{
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.photo-owner{
+    background-image: url(../images/image-avatar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+    border: 0.1rem solid var(--white);
+    border-radius: 100%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.card-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-owner{
+    color: var(--primary-blue);
+    margin-left: 3rem;
+}
+.card-owner>span{
+    color: var(--white);
+}
+.card-owner>span:hover{
+    color: var(--primary-cyan);
+    cursor: pointer;
+}
